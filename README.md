@@ -1,5 +1,5 @@
 ## Welcome to my GitHub repository
-This [link](https://github.com/fab3F/freestream.github.io/blob/main/README.md) will take you directly to that repository.
+This [link](https://github.com/freestream-us-to/freestream-us-to.github.io/blob/main/README.md) will take you directly to that repository.
 
 ### Website
 
@@ -16,4 +16,4 @@ For example, what movies and series will be available there?
 
 ```
 
-For more information, check us out on [Discord](https://discord.gg/dkpKAdvarP).
+For more information, check out the website!
