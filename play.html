@@ -73,23 +73,33 @@
         return urlparameter;
     }
 
+
+
+
+
+
     function getLinks(boolean download){
 
 
 
         document.getElementById("iframe").src = src
+
         if(download=true){
             window.open(downloadlink, "_blank");
         }
 
+
+
+
     }
+
+
+
+
+
 
     function setName(name){
         document.getElementById("header1").innerHTML = name;
-    }
-
-    function setIframe(src){
-        document.getElementById("iframe").src = src;
     }
 
 
@@ -114,5 +124,5 @@
     }
 
     setName(name);
-    setLinks();
+    getLinks();
 </script></div></div></body></html>
