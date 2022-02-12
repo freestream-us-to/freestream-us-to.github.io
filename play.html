@@ -94,12 +94,15 @@
         var type = getUrlParam("t","Empty");
         var src = getUrlParam("s","Empty");
         var useadblock = new Boolean("true");
+        var embedlink = "";
+        var downloadlink = "";
 
 
 
         if(type="mega"){
             var embedlink = "https://mega.nz/embed/" + src;
             var downloadlink = "https://mega.nz/file/" + src;
+            useadblock
         }
         else if(type="st"){
 
