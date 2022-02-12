@@ -130,13 +130,14 @@
 
         if(download){
             window.open(downloadlink, "_blank");
-        }else{
-            document.getElementById("iframe").src = embedlink;
-            setName(useadblock);
         }
+
+        document.getElementById("iframe").src = embedlink;
+        setName(useadblock);
 
     }
 
     getLinks(false);
+    setName();
 
 </script></div></div></body></html>
