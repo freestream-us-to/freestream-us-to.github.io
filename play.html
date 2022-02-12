@@ -73,11 +73,15 @@
         return urlparameter;
     }
 
-    function download(){
-        var dlink = getUrlParam("lnk","Empty");
-        var dlink = dlink.replace("/v/","/e/");
-        var dlink = dlink.replace("embed","file");
-        window.open(dlink, "_blank");
+    function getLinks(boolean download){
+
+
+
+
+        if(download=true){
+            window.open(downloadlink, "_blank");
+        }
+
     }
 
     function setName(name){
