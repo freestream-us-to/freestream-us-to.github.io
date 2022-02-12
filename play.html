@@ -81,9 +81,6 @@
             name = name.replace("%20"," ");
         }
         document.getElementById("header1").innerHTML = name;
-        if(adblock){
-            document.getElementById("header2").innerHTML = "Make sure you are using an ADBLOCKER!!!";
-        }
     }
 
 
@@ -137,7 +134,7 @@
         document.getElementById("iframe").src = embedlink;
 
     }
-    
+
     setName();
     getLinks(false);
     
