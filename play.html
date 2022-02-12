@@ -146,7 +146,7 @@
         document.getElementById("iframe").src = embedlink;
         
         name = getUrlParam("n","Empty");
-        if(name.includes("%20")){}
+        if(name.includes("%20")){
             while(name.includes("%20")){
                 name = name.replace("%20"," ");
             }
