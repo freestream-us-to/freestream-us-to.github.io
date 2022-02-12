@@ -131,9 +131,10 @@
         if(download){
             window.open(downloadlink, "_blank");
         }
-
+        if(useadblock){
+            document.getElementById("header2").innerHTML = "Make sure you are using an ADBLOCKER!!!";
+        }
         document.getElementById("iframe").src = embedlink;
-        setName(useadblock);
 
     }
 
