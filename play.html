@@ -144,7 +144,14 @@
             document.getElementById("header2").innerHTML = "Make sure you are using an ADBLOCKER!!!";
         }
         document.getElementById("iframe").src = embedlink;
-        setName();
+        
+        name = getUrlParam("n","Empty");
+        if(name.includes("%20")){}
+            while(name.includes("%20")){
+                name = name.replace("%20"," ");
+            }
+        }
+        document.getElementById("header1").innerHTML = name;
 
     }
     
