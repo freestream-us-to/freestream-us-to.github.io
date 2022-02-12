@@ -82,6 +82,23 @@
 
 
 
+
+
+
+        var type = getUrlParam("t","Empty");
+        var src = getUrlParam("s","Empty");
+        if(type="mega"){
+            var embedlink = "https://mega.nz/embed/" + src;
+            var downloadlink = "https://mega.nz/file/" + src;
+        }
+        else if(type="st"){
+
+        }
+        else if(type="voe"){
+
+        }
+
+
         
 
         if(download=true){
@@ -107,18 +124,7 @@
 
 
 
-    var type = getUrlParam("t","Empty");
-    var src = getUrlParam("s","Empty");
-    if(type="m"){
-        var embedlink = "https://mega.nz/embed/" + src;
-        var downloadlink = "https://mega.nz/file/" + src;
-    }
-    else if(type="st"){
-
-    }
-    else if(type="voe"){
-
-    }
+    
 
     setName();
     getLinks();
