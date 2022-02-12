@@ -91,12 +91,12 @@
     function getLinks(boolean download){
 
 
-
-
-
-
         var type = getUrlParam("t","Empty");
         var src = getUrlParam("s","Empty");
+        boolean useadblock = true;
+
+
+
         if(type="mega"){
             var embedlink = "https://mega.nz/embed/" + src;
             var downloadlink = "https://mega.nz/file/" + src;
