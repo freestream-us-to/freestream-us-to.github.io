@@ -87,7 +87,7 @@
 
 
     function getLinks(download){
-        setName();
+        
 
         var type = getUrlParam("t","Empty");
         var src = getUrlParam("s","Empty");
@@ -143,6 +143,7 @@
             document.getElementById("header2").innerHTML = "Make sure you are using an ADBLOCKER!!!";
         }
         document.getElementById("iframe").src = embedlink;
+        setName();
 
     }
 
