@@ -145,20 +145,10 @@
         }
         document.getElementById("iframe").src = embedlink;
         
-        name = getUrlParam("n","Empty");
-        name = name.replace("%20"," ");
-        name = name.replace("%20"," ");
-        name = name.replace("%20"," ");
-        name = name.replace("%20"," ");
-        name = name.replace("%20"," ");
-        name = name.replace("%20"," ");
-        name = name.replace("%20"," ");
-        name = name.replace("%20"," ");
-        name = name.replace("%20"," ");
-        name = name.replace("%20"," ");
-        name = name.replace("%20"," ");
-        name = name.replace("%20"," ");
-        name = name.replace("%20"," ");
+        name = getUrlParam("name","Empty");
+        while(name.includes("%20")){
+            name = name.replace("%20"," ");
+        }
         
         document.getElementById("header1").innerHTML = name;
 
