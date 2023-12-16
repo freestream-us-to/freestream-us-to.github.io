@@ -24,8 +24,8 @@
     padding: 10px;
     width: 80px;
     height: 80px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0px auto;
+    display: block;
 }
 
 .navbar a:hover {

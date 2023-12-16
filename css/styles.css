@@ -67,17 +67,18 @@ body {
     background-image: url('/assets/icon/searchicon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    width: 75%;
+    width: 82%;
     font-size: 16px;
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
     display: block;
     margin: 20px auto;
+    border-radius: 5px;
 }
 
 #table {
     border-collapse: collapse;
-    width: 75%;
+    width: 82%;
     border: 2px solid #ddd;
     font-size: 18px;
     margin: 20px auto;
