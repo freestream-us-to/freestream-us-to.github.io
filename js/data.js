@@ -34,7 +34,7 @@ function fetchAndPopulateTable() {
               if (title && source && type) {
                   let link = generateLink(title, source, type);
                   let tableRow = document.createElement("tr");
-                  tableRow.innerHTML = `<td>${title}</td><td><button class="btn" onclick='window.open(${link}', '_self')">Stream</button></td>`;
+                  tableRow.innerHTML = `<td>${title}</td><td><button class="btn" onclick="window.open('${link}', '_self')">Stream</button></td>`;
 
                   document.getElementById("table").appendChild(tableRow);
               }
