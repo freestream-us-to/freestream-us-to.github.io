@@ -56,18 +56,19 @@ body {
     background-image: url('/assets/icon/searchicon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 75%;
     font-size: 16px;
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
-    margin: 15px;
+    margin: 20px auto;
 }
 
 #table {
     border-collapse: collapse;
-    width: 100%;
+    width: 75%;
     border: 2px solid #ddd;
     font-size: 18px;
+    margin: 20px auto;
 }
 
 #table th, #table td {
