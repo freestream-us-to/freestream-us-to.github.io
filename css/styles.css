@@ -60,8 +60,7 @@ body {
 .glowing-btn {
     position: relative;
     left: 5%;
-    width: 50%;
-    margin: 10px 0px;
+    margin: 25px 0px;
 }
 
 #input {
