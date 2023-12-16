@@ -1,0 +1,39 @@
+.navbar {
+    width: 100%;
+    background-color: #333333;
+    overflow: hidden;
+    align-items: center;
+}
+
+.navbar a {
+    float: left;
+    transition: transform .2s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.navbar p {
+    padding: 15px;
+    margin: 0;
+    font-size: 45px;
+    color: #F9F8CC;
+    text-align: center;
+}
+
+.navbar img {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
