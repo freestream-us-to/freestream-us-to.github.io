@@ -52,19 +52,16 @@ body {
     font-size: 25px;
 }
 
-.input {
-    width: 75%;
-    margin: 20px 0px;
-}
-
 #input {
     background-image: url('/assets/icon/searchicon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 75%;
     font-size: 16px;
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
+    display: block;
+    margin: 20px auto;
 }
 
 #table {
