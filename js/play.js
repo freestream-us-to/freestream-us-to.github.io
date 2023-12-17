@@ -83,6 +83,10 @@ if(type=="mfire"){
     document.getElementById("title").innerHTML = "NUR als Download: " + title;
 }
 
+if(extra){
+    document.getElementById("title").innerHTML = title + " - " + extra;
+}
+
 document.getElementById('download-button').addEventListener('click', function() {
     window.open(downloadlink, "_blank");
 });

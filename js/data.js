@@ -1,5 +1,10 @@
-function generateLink(title, source, type) {
-  return `https://freestream.us.to/play?s=${source}&t=${type}&n=${title}`;
+function generateLink(title, source, type, extra) {
+    if(extra != ""){
+        return `https://freestream.us.to/play?s=${source}&t=${type}&n=${title}&extra=${extra}`;
+    }else{
+        return `https://freestream.us.to/play?s=${source}&t=${type}&n=${title}`;
+    }
+        
 }
 
 function search() {
@@ -30,11 +35,19 @@ function fetchAndPopulateTable() {
               let title = e[0];
               let source = e[1];
               let type = e[2];
+              let btnname = "Stream";
+              let extra = "";
+              if(e[3]){
+                btnname = e[3];
+              }
+              if(e[4]){
+                extra = e[4];
+              }
 
               if (title && source && type) {
-                  let link = generateLink(title, source, type);
+                  let link = generateLink(title, source, type, extra);
                   let tableRow = document.createElement("tr");
-                  tableRow.innerHTML = `<td>${title}</td><td><button class="btn" onclick="window.open('${link}', '_self')">Stream</button></td>`;
+                  tableRow.innerHTML = `<td>${title}</td><td><button class="btn" onclick="window.open('${link}', '_self')">` + btnname + `</button></td>`;
 
                   document.getElementById("table").appendChild(tableRow);
               }
