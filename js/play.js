@@ -61,6 +61,10 @@ else if(type=="vidoza"){
 else if(type=="mfire"){
     embedlink = "/assets/error.mp4";
     downloadlink = "https://www.mediafire.com/file/" + src;
+}
+else if(type=="yt"){
+    embedlink = "https://www.youtube.com/embed/" + src;
+    downloadlink = "https://www.youtube.com/watch?v=" + src;
 } 
 else if(type=="Empty" || type=="undefined"){
     embedlink = "/assets/error.mp4";
