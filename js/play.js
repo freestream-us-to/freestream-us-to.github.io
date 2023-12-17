@@ -83,7 +83,7 @@ if(type=="mfire"){
     document.getElementById("title").innerHTML = "NUR als Download: " + title;
 }
 
-if(extra){
+if(extra != "Empty"){
     document.getElementById("title").innerHTML = title + " - " + extra;
 }
 
