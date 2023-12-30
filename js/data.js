@@ -1,5 +1,10 @@
 function generateLink(title, source, type, extra) {
+    title = encodeURIComponent(title);
+    source = encodeURIComponent(source);
+    type = encodeURIComponent(type);
+
     if(extra != ""){
+        extra = encodeURIComponent(extra);
         return `https://freestream.us.to/play?s=${source}&t=${type}&n=${title}&extra=${extra}`;
     }else{
         return `https://freestream.us.to/play?s=${source}&t=${type}&n=${title}`;
