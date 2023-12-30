@@ -6,7 +6,10 @@ document.getElementById("title").innerHTML = title;
 
 var type = decodeURIComponent(urlParams.get('t'));
 var src = decodeURIComponent(urlParams.get('s'));
-var extra = decodeURIComponent(urlParams.get('extra'));
+var extra = "Empty";
+if(urlParams.get('extra')){
+    extra = decodeURIComponent(urlParams.get('extra'));
+}
 var embedlink = "";
 var downloadlink = "";
 var name = "";
@@ -46,15 +49,15 @@ else{
 }
 
 
-
 document.getElementById("iframe").src = embedlink;
+
 
 if(type=="mfire"){
     let tmptitle = document.getElementById("title").innerHTML;
     document.getElementById("title").innerHTML = "NUR als Download: " + tmptitle;
 }
 
-if(extra){
+if(extra != "Empty"){
     let tmptitle = document.getElementById("title").innerHTML;
     document.getElementById("title").innerHTML = tmptitle + " - " + extra;
 }
