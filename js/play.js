@@ -35,6 +35,10 @@ else if(type=="vidoza"){
     embedlink = "https://vidoza.net/embed-" + src + ".html";
     downloadlink = "https://vidoza.net/embed-" + src + ".html";
 }
+else if(type=="streamtape"){
+    embedlink = "https://streamtape.com/e/" + src;
+    downloadlink = "https://streamtape.com/v/" + src;
+}
 else if(type=="mfire"){
     embedlink = "/assets/error.mp4";
     downloadlink = "https://www.mediafire.com/file/" + src;
