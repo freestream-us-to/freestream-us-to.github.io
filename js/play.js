@@ -21,7 +21,7 @@ if(type=="mega"){
 }
 else if(type=="voe"){
     embedlink = "https://voe.sx/e/" + src;
-    downloadlink = "https://voe.sx/" + src;
+    downloadlink = "https://voe.sx/" + src + "/download";
 }
 else if(type=="vup"){
     embedlink = "https://vupload.com/e/" + src;
@@ -33,11 +33,15 @@ else if(type=="ds2play"){
 }
 else if(type=="vidoza"){
     embedlink = "https://vidoza.net/embed-" + src + ".html";
-    downloadlink = "https://vidoza.net/embed-" + src + ".html";
+    downloadlink = "https://dirpy.com/studio?url=https://vidoza.net/embed-" + src + ".html";
 }
 else if(type=="streamtape"){
     embedlink = "https://streamtape.com/e/" + src;
     downloadlink = "https://streamtape.com/v/" + src;
+}
+else if(type=="supervideo"){
+    embedlink = "https://supervideo.tv/e/" + src;
+    downloadlink = "https://supervideo.tv/dl?op=download_orig&id=" + src;
 }
 else if(type=="mfire"){
     embedlink = "/assets/error.mp4";
@@ -45,7 +49,7 @@ else if(type=="mfire"){
 }
 else if(type=="yt"){
     embedlink = "https://www.youtube.com/embed/" + src;
-    downloadlink = "https://www.youtube.com/watch?v=" + src;
+    downloadlink = "https://dirpy.com/studio?url=https://www.youtube.com/watch?v=" + src;
 }
 else{
     embedlink = "/assets/error.mp4";
